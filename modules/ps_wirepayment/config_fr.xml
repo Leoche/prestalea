@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_wirepayment</name>
+    <displayName><![CDATA[Transfert bancaire]]></displayName>
+    <version><![CDATA[2.1.1]]></version>
+    <description><![CDATA[Montrez &agrave; vos clients que vous acceptez les virements en affichant vos coordonn&eacute;es
+bancaires sur la page de paiement.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous certain de vouloir effacer vos données ?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

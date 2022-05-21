@@ -1,0 +1,13 @@
+ 
+
+{shop_url}
+
+Bonjour,
+
+Le stock restant est maintenant inférieur au minimum défini de : {warning_coverage}
+
+Couverture actuelle : {current_coverage}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

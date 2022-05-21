@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_socialfollow</name>
+    <displayName><![CDATA[Liens de suivi sur r&eacute;seaux sociaux]]></displayName>
+    <version><![CDATA[2.2.0]]></version>
+    <description><![CDATA[Facebook, Twitter, montrez &agrave; vos clients o&ugrave; ils peuvent vous
+suivre pour d&eacute;velopper votre communaut&eacute;.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

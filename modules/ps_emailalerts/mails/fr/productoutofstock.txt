@@ -1,0 +1,17 @@
+ 
+
+{shop_url}
+
+Bonjour,
+
+{product} est en rupture de stock.
+
+Il y a maintenant moins de {last_qty} articles en stock.
+
+Stock restant : {qty}
+
+Renouvelez vos stocks, rendez-vous dans la section Catalogue > Stocks de votre back office pour gérer les quantités de vos articles.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

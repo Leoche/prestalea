@@ -1,0 +1,17 @@
+ 
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+Merci pour votre confiance.
+
+Nous avons le plaisir de vous offrir une réduction de {amount}% sur votre prochaine commande. Cette offre est valable {days} jours alors n'attendez plus !
+
+Voici votre BON DE REDUCTION : {voucher_num}
+
+Saisissez ce code dans votre panier pour bénéficier de la réduction.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

@@ -1,0 +1,16 @@
+services:
+  PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsController:
+    class: PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsController
+    arguments:
+      - "@ps_metrics.module"
+
+  PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsResolverController:
+    class: PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsResolverController
+
+  PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsLegacyStatsController:
+    class: PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsLegacyStatsController
+
+  PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsOauthController:
+    class: PrestaShop\Module\Ps_metrics\Controller\Admin\MetricsOauthController
+    arguments:
+      - "@ps_metrics.module"

@@ -1,0 +1,43 @@
+ 
+
+{shop_url}
+
+Bravo !
+
+Une nouvelle commande a été effectuée sur {shop_name} par le client suivant : {firstname} {lastname} ({email})
+
+Détails de la commande
+
+Commande : {order_name} passée le {date}
+
+Paiement : {payment}
+
+Référence	Produit	Prix unitaire	Quantité	Prix total   {items}
+Produits	{total_products}
+Réductions	{total_discounts}
+Paquet cadeau	{total_wrapping}
+Livraison	{total_shipping}
+Incluant un total de taxes	{total_tax_paid}
+Total payé	{total_paid}
+
+Transporteur
+
+Transporteur : {carrier}
+
+Paiement : {payment}
+
+Adresse de livraison
+
+{delivery_block_html}
+
+Adresse de facturation
+
+{invoice_block_html}
+
+Message du client :
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

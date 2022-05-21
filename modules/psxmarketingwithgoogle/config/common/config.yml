@@ -1,0 +1,3 @@
+services:
+  PrestaShop\Module\PsxMarketingWithGoogle\Config\Env:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Config\Env

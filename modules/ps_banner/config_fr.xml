@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_banner</name>
+    <displayName><![CDATA[Banni&egrave;re]]></displayName>
+    <version><![CDATA[2.1.1]]></version>
+    <description><![CDATA[Ajoutez une banni&egrave;re &agrave; votre page d&#039;accueil pour mettre en avant vos offres sp&eacute;ciales ou nouveaux produits de fa&ccedil;on visuelle et attrayante.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

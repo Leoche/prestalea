@@ -1,0 +1,21 @@
+services:
+  PrestaShop\Module\PrestashopFacebook\Repository\GoogleCategoryRepository:
+    class: PrestaShop\Module\PrestashopFacebook\Repository\GoogleCategoryRepository
+    arguments:
+      - '@PrestaShop\Module\PrestashopFacebook\Adapter\ConfigurationAdapter'
+
+  PrestaShop\Module\PrestashopFacebook\Repository\ProductRepository:
+    class: PrestaShop\Module\PrestashopFacebook\Repository\ProductRepository
+    arguments:
+      - '@ps_facebook.language'
+
+  PrestaShop\Module\PrestashopFacebook\Repository\ShopRepository:
+    class: PrestaShop\Module\PrestashopFacebook\Repository\ShopRepository
+
+  PrestaShop\Module\PrestashopFacebook\Repository\TabRepository:
+    class: PrestaShop\Module\PrestashopFacebook\Repository\TabRepository
+
+  PrestaShop\Module\PrestashopFacebook\Repository\ServerInformationRepository:
+    class: PrestaShop\Module\PrestashopFacebook\Repository\ServerInformationRepository
+    arguments:
+      - '@PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts'

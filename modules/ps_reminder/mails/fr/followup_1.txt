@@ -1,0 +1,23 @@
+ 
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+Votre panier chez {shop_name}
+
+Merci de votre visite. Cependant, vous n'avez pas finalisé votre commande.
+
+Vous panier a été conservé, vous pouvez reprendre votre commande depuis notre boutique : {shop_url}
+
+Nous avons le plaisir de vous offrir une réduction de {amount}% sur votre prochaine commande. Cette offre est valable {days} jours alors n'attendez plus !
+
+Votre bon de réduction sur {shop_name}
+
+Voici votre BON DE REDUCTION : {voucher_num}
+
+Saisissez ce code dans votre panier pour bénéficier de la réduction.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

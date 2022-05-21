@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_emailsubscription</name>
+    <displayName><![CDATA[Inscription &agrave; la newsletter]]></displayName>
+    <version><![CDATA[2.7.0]]></version>
+    <description><![CDATA[Restez en contact avec vos clients en ajoutant un formulaire d&#039;inscription &agrave; votre newsletter sur votre boutique en ligne. ]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous sûr de vouloir supprimer tous vos contacts ?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

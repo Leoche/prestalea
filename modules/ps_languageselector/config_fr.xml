@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_languageselector</name>
+    <displayName><![CDATA[Bloc s&eacute;lecteur de langue]]></displayName>
+    <version><![CDATA[2.1.0]]></version>
+    <description><![CDATA[Ajoute un bloc permettant &agrave; vos clients de s&eacute;lectionner la langue de votre boutique.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

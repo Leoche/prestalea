@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>statsnewsletter</name>
+    <displayName><![CDATA[Lettre d&#039;informations]]></displayName>
+    <version><![CDATA[2.0.3]]></version>
+    <description><![CDATA[Enrichissez vos statistiques en affichant un graphique
+d&rsquo;inscriptions &agrave; votre newsletter.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[analytics_stats]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

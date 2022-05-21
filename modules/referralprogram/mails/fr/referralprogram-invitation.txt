@@ -1,0 +1,19 @@
+ 
+
+{shop_url}
+
+{firstname_friend} {lastname_friend}, Rejoignez-nous !
+
+Votre ami {firstname} {lastname} souhaite vous parrainer sur [{shop_name}]({shop_url}) !
+
+Nous avons le plaisir de vous offrir un bon d'achat de {discount} à utiliser sur votre prochaine commande. Devenez son(sa) filleul(e) et remportez un bon d'achat de {discount} !
+
+[Pour nous rejoindre, rien de plus simple, cliquez ici !]({link})
+
+N'oubliez pas de renseigner l'adresse e-mail de l'ami qui vous parraine lors de votre inscription : {email}.
+
+Bien cordialement,
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

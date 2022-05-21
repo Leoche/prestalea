@@ -1,0 +1,17 @@
+ 
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+Identifiant de commande {order_name} - Commande modifiée
+
+Votre commande ayant pour référence {order_name} sur {shop_name} a été modifiée par le marchand.
+
+Pour en savoir plus, rendez-vous sur votre compte client.
+
+Si vous avez un compte invité, vous pouvez suivre votre commande via la section [Suivi de commande]({guest_tracking_url}) sur notre boutique.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

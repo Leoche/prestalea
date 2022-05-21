@@ -1,0 +1,49 @@
+services:
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\TabRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\TabRepository
+
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\CarrierRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\CarrierRepository
+    arguments:
+      - '@psxmarketingwithgoogle.db'
+      - '@psxmarketingwithgoogle.context'
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\AttributesRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\AttributesRepository
+    arguments:
+      - '@psxmarketingwithgoogle.context'
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\CountryRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\CountryRepository
+    arguments:
+      - '@psxmarketingwithgoogle.db'
+      - '@psxmarketingwithgoogle.context'
+      - '@psxmarketingwithgoogle.country'
+      - '@PrestaShop\Module\PsxMarketingWithGoogle\Adapter\ConfigurationAdapter'
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\CurrencyRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\CurrencyRepository
+    arguments:
+      - '@psxmarketingwithgoogle.currency'
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\LanguageRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\LanguageRepository
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\ProductRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\ProductRepository
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\ShopRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\ShopRepository
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\StateRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\StateRepository
+    arguments:
+      - '@psxmarketingwithgoogle.db'
+      - '@psxmarketingwithgoogle.context'
+
+  PrestaShop\Module\PsxMarketingWithGoogle\Repository\TaxRepository:
+    class: PrestaShop\Module\PsxMarketingWithGoogle\Repository\TaxRepository
+    arguments:
+      - '@psxmarketingwithgoogle.db'
+      - '@psxmarketingwithgoogle.context'

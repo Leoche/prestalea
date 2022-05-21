@@ -1,0 +1,40 @@
+services:
+  psxmarketingwithgoogle.context:
+    class: 'Context'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getContext']
+
+  psxmarketingwithgoogle.controller:
+    class: 'Controller'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getController']
+
+  psxmarketingwithgoogle.cookie:
+    class: 'Cookie'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getCookie']
+
+  psxmarketingwithgoogle.language:
+    class: 'Language'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getLanguage']
+
+  psxmarketingwithgoogle.currency:
+    class: 'Currency'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getCurrency']
+
+  psxmarketingwithgoogle.smarty:
+    class: 'Smarty'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getSmarty']
+
+  psxmarketingwithgoogle.country:
+    class: 'Country'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getCountry']
+
+  psxmarketingwithgoogle.shop:
+    class: 'Shop'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getShop']
+
+  psxmarketingwithgoogle.link:
+    class: 'Shop'
+    factory: ['PrestaShop\Module\PsxMarketingWithGoogle\Factory\ContextFactory', 'getLink']
+
+  psxmarketingwithgoogle.db:
+    class: Db
+    factory: [ 'Db', 'getInstance' ]

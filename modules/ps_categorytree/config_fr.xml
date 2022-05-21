@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_categorytree</name>
+    <displayName><![CDATA[Liens des cat&eacute;gories]]></displayName>
+    <version><![CDATA[2.0.2]]></version>
+    <description><![CDATA[Facilitez la navigation sur votre boutique en ligne en montrant &agrave; vos visiteurs la cat&eacute;gorie et les sous-cat&eacute;gories actuelles.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

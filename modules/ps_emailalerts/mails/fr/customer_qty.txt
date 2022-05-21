@@ -1,0 +1,15 @@
+ 
+
+{shop_url}
+
+Bonjour,
+
+{product} est maintenant disponible.
+
+Bonne nouvelle, cet article est de nouveau en stock !
+
+Cliquez sur le lien suivant pour accéder à la page produit et le commander : [{product}]({product_link})
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

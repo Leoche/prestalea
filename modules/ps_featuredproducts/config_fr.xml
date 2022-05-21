@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_featuredproducts</name>
+    <displayName><![CDATA[Produits phares]]></displayName>
+    <version><![CDATA[2.1.2]]></version>
+    <description><![CDATA[Mettez en avant les articles d&rsquo;une cat&eacute;gorie de votre choix pour am&eacute;liorer l&rsquo;exp&eacute;rience de vos clients gr&acirc;ce &agrave; une page d&rsquo;accueil dynamique.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
