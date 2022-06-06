@@ -83,4 +83,9 @@ $(document).ready(() => {
     },
     allowPageScroll: 'vertical',
   });
+  $('.header-icon.close').click(function (e){
+    e.preventDefault();
+   $('.lea-menu').removeClass('active')
+  })
+
 });

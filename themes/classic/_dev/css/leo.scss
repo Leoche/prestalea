@@ -1,5 +1,5 @@
 #wrapper {
-  background: #eddde0;
+  background: #fff;
 }
 .container {
   @include tablet {
@@ -32,8 +32,8 @@ header {
   }
   width: 100%;
   flex-grow: 1;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 35px rgba(226, 176, 185, 0.2);
+  backdrop-filter: blur(8px);
   .container {
     display: flex;
     align-items: center;
@@ -116,11 +116,17 @@ header {
     background: rgba(#fff, 0.35);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    pointer-events: none;
     &:before {
       content: "MENU";
       color: #ecadc4;
       font-size: 12px;
       letter-spacing: 12px;
+    }
+    &.active{
+      opacity: 1;
+      pointer-events: all;
     }
   }
 
@@ -171,4 +177,170 @@ header {
       transform: translateX(50%);
     }
   }
+}
+.row {
+  margin-right: -0;
+  margin-left: -0;
+}
+#wrapper{
+  padding-top: 0;
+}
+.loveletter{
+  width: 100%;
+  height: 595px;
+  background: url(../img/hero_ll.jpg) #eddce2 center center;
+  .container{
+    height: 100%;
+    .content{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 60px;
+      p{
+        letter-spacing: 12px;
+        color: #7E5C76;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      > img{
+        margin-top: -42px;
+        margin-bottom: -33px;
+      }
+      .price{
+        display: inline-flex;
+        align-items: center;
+        .price-value{
+          font: normal normal medium 12px/18px Jost;
+          letter-spacing: 0px;
+          color: #7E5C76;
+          text-transform: uppercase;
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+}
+.btn-lea{
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #640927 !important;
+  transition: all 0.2s;
+  box-shadow: 0 5px 15px rgba(226, 176, 185, 0.2);
+  img{
+    margin-left: 16px;
+    transition: all 0.2s;
+  }
+  &:hover{
+    transform:translateY(-3px);
+    color: #3b0517 !important;
+    box-shadow: 0 8px 15px rgba(226, 176, 185, 0.1);
+    img{
+      transform: translateX(5px);
+    }
+  }
+  &:active{
+    transform:translateY(-1px)
+  }
+}
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-offset: -2px;
+}
+@include not-desktop{
+  #footer{
+    overflow: hidden;
+  }
+}
+@include mobile{
+  .footer-container .links ul{
+    background: transparent;
+  }
+  #footer .navbar-toggler > *{
+    font-size: 18px;
+    color: #640927;
+  }
+}
+// FOOTER
+.row.reassurance{
+  margin-bottom: 64px;
+}
+.footer-container{
+  background: linear-gradient(0deg, #FFF6F9 0%, #fefefe 100%);
+  position: relative;
+  overflow: unset;
+  z-index: 1;
+  padding-top: 0;
+  .copyrightsubfooter{
+    color: #6c1632;
+    font-size: 12px;
+  }
+  .container {
+    padding-top: 64px;
+    position: relative;
+    > .row:last-child{
+      padding-top: 64px;
+    }
+    &::after{
+      position: absolute;
+      top: -37px;
+      left: -50px;
+      width: 183px;
+      height: 106px;
+      background: url(/img/petales.png);
+      content: '';
+    }
+    &::before{
+      position: absolute;
+      top: -47px;
+      right: -50px;
+      width: 160px;
+      height: 170px;
+      background: url(/img/petale.png);
+      content: '';
+    }
+    a{
+      color: #302828;
+    }
+  }
+  &::before{
+    position: absolute;
+    top: -87px;
+    left: 0;
+    height: 87px;
+    width: 100%;
+    background: url(/img/subfooter.png);
+    content: '';
+    box-shadow: inset 0px -35px 26px -30px #f0c1d26b;
+  }
+}
+
+.footer-container .links .h3, #block_myaccount_infos .myaccount-title a{
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #640927;
+  position: relative;
+  margin-bottom: 24px;  
+  margin-top: 10px;
+  }
+.footer-container .links .h3:after{
+  content:'';
+  width: 20px;
+  height: 1px;
+  background: #640927;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
 }

@@ -22,10 +22,10 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<div class="col-md-6 links">
+<div class="col-md-3 links wrapper">
   <div class="row">
   {foreach $linkBlocks as $linkBlock}
-    <div class="col-md-6 wrapper">
+    <div class="col-md-12 wrapper">
       <p class="h3 hidden-sm-down">{$linkBlock.title}</p>
       <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_{$linkBlock.id}" data-toggle="collapse">
         <span class="h3">{$linkBlock.title}</span>

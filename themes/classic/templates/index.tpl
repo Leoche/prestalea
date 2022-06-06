@@ -29,6 +29,22 @@
         {block name='page_content_top'}{/block}
 
         {block name='page_content'}
+          {if $page.page_name == 'index'}
+            <section class="loveletter">
+              <div class="container flex">
+                <div class="content">
+                  <p class="subtitle">Découvrez</p>
+                  <img src="/img/lea/loveletter.svg" alt="loveletter">
+                  <div class="price">
+                    <span class="price-value">Disponible à partir de 29.99€</span>
+                    <span class="price-currency">
+                      <a href="#" class="btn-lea">Commander <img src="/img/lea/arrow_pink.svg" alt="Go"></a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+           {/if}
           {block name='hook_home'}
             {$HOOK_HOME nofilter}
           {/block}

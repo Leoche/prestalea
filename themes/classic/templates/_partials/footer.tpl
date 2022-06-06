@@ -28,27 +28,55 @@
       {hook h='displayFooterBefore'}
     {/block}
   </div>
+  <div class="row reassurance">
+    <div class="col-md-3">
+      <img src="/img/lea/lock.png" alt="Paiement sécurisé">
+      <span>Paiement sécurisé</span>
+      <img src="/img/lea/cb.png" alt="Moyens de paiements">
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+  </div>
 </div>
 <div class="footer-container">
   <div class="container">
     <div class="row">
+      <div class="col-md-3 links wrapper">
+        <div class="row">
+          <div class="col-md-12 wrapper">
+          <img src="/img/lea/logo.png" alt="La boutique de Léa">
+            <img src="/img/lea/petales.png" alt="Pétales de Léa">
+          </div>
+        </div>
+      </div>
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}
-    </div>
-    <div class="row">
-      {block name='hook_footer_after'}
-        {hook h='displayFooterAfter'}
-      {/block}
+      <div class="col-md-3 links wrapper">
+        <div class="row">
+          <div class="col-md-12 wrapper">
+            <p class="h3 hidden-sm-down">NOUS SUIVRE</p>
+            <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu" data-toggle="collapse">
+              <span class="h3">NOUS SUIVRE</span>
+              <span class="float-xs-right">
+                <span class="navbar-toggler collapse-icons">
+                  <i class="material-icons add">&#xE313;</i>
+                  <i class="material-icons remove">&#xE316;</i>
+                </span>
+              </span>
+            </div>
+            <ul id="footer_sub_menu" class="collapse">
+              sdsd
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p class="text-sm-center">
-          {block name='copyright_link'}
-            <a href="https://www.prestashop.com" target="_blank" rel="noopener noreferrer nofollow">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
-          {/block}
+        <p class="text-sm-center copyrightsubfooter">
+        © 2022 - La Boutique de Léa
         </p>
       </div>
     </div>

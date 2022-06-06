@@ -58,7 +58,7 @@
   <nav id="menu">
     <div class="container">
       <div class="logo-container">
-        {renderLogo}
+        <img src="/img/lea/logo.png" alt="La boutique de Léa">
       </div>
       <div class="menu">
         <div class="lea-links">
@@ -69,7 +69,7 @@
       </div>
     </div>
   </nav>
-  <div class="lea-links">
+  <div class="lea-links lea-menu">
     <a href="#">LA LOVE LETTER</a>
     <a href="#" class="inactive">La BOUSSOLE <div class="tag">Épuisé</div></a>
     <a
