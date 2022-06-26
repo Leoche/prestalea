@@ -29,14 +29,23 @@
     {/block}
   </div>
   <div class="row reassurance">
-    <div class="col-md-3">
-      <img src="/img/lea/lock.png" alt="Paiement sécurisé">
+    <div class="col-md-3 col-xs-6">
+      <img src="/img/lea/lock.svg" alt="Paiement sécurisé">
       <span>Paiement sécurisé</span>
       <img src="/img/lea/cb.png" alt="Moyens de paiements">
     </div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
+    <div class="col-md-3 col-xs-6">
+      <img src="/img/lea/package.svg" alt="Paiement sécurisé">
+      <span>Paiement sécurisé</span>
+    </div>
+    <div class="col-md-3 col-xs-6">
+      <img src="/img/lea/shipping.svg" alt="Paiement sécurisé">
+      <span>Expédié sous 48h à 72h</span>
+    </div>
+    <div class="col-md-3 col-xs-6">
+      <img src="/img/lea/speech.svg" alt="Paiement sécurisé">
+      <span>S.A.V. et assistance du Lundi au Vendredi de 9h à 18h</span>
+    </div>
   </div>
 </div>
 <div class="footer-container">

@@ -16,6 +16,46 @@ header {
     }
   }
 }
+.btn, .form-control{
+  border-radius: 10px;
+}
+#login-form h1{
+  text-align: center;
+  font-weight: 400;
+  color: #000;
+  padding-bottom: 45px;
+  font-size: 26px;
+}
+.page-authentication #content{
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgb(248, 235, 236);
+}
+form .form-control-label {
+  font-weight: normal;
+}
+.input-group .input-group-btn > .btn[data-action="show-password"]{
+  background: #000;
+}
+.btn-primary, .btn-secondary, .btn-tertiary {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+body{
+  font-weight: 400;
+  padding-top: 96px;
+  background: #fbf5f6;
+  #wrapper{
+    max-width: 1190px;
+    background: unset;
+    margin:0 auto;
+  }
+  &#index{
+    padding-top: 0;
+    #wrapper{
+      max-width: 100%;
+    }
+  }
+}
 #menu {
   position: fixed;
   top: 0;
@@ -24,6 +64,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 64px;
+  font-weight: 500;
   @include mobile {
     height: 48px;
     .lea-links {
@@ -274,6 +315,9 @@ a:focus {
   }
 }
 // FOOTER
+#footer{
+  background: #ffffff;
+}
 .row.reassurance{
   margin-bottom: 64px;
 }
@@ -343,4 +387,36 @@ a:focus {
   position: absolute;
   left: 0;
   bottom: -10px;
+}
+.reassurance{
+  margin-bottom: 32px !important;
+  
+@include mobile{
+  margin-bottom: 24px !important;
+  margin-top: 48px !important;
+}
+  .col-md-3{
+    display: flex;
+    flex-direction: column;
+    @include mobile{
+      height: 160px;
+    }
+    img{
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      margin:0 auto 16px auto;
+      &:last-child{
+        height: 30px;
+        margin:0 auto 0 auto;
+      }
+    }
+    span{
+      text-align: center;
+      color: #161014;
+      @include mobile{
+        font-size: 14px;
+      }
+    }
+  }
 }

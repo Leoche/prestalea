@@ -25,7 +25,6 @@
 {extends file='page.tpl'}
 
 {block name='page_title'}
-  {l s='Log in to your account' d='Shop.Theme.Customeraccount'}
 {/block}
 
 {block name='page_content'}

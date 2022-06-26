@@ -28,6 +28,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 let config = {
+  mode: 'development',
   entry: {
     theme: ['./js/theme.js', './css/theme.scss'],
     error: ['./css/error.scss'],
