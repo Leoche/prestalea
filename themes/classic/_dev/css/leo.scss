@@ -389,13 +389,15 @@ a:focus {
   bottom: -10px;
 }
 .reassurance{
-  margin-bottom: 32px !important;
+  margin-bottom: 48px !important;
+  position: relative;
+  z-index: 2;
   
-@include mobile{
-  margin-bottom: 24px !important;
-  margin-top: 48px !important;
-}
-  .col-md-3{
+  @include mobile{
+    margin-bottom: 24px !important;
+    margin-top: 48px !important;
+  }
+  .col-md-3.col-xs-6{
     display: flex;
     flex-direction: column;
     @include mobile{

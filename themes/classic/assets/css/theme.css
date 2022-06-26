@@ -9453,12 +9453,14 @@ a:focus {
   bottom: -10px; }
 
 .reassurance {
-  margin-bottom: 32px !important; }
+  margin-bottom: 48px !important;
+  position: relative;
+  z-index: 2; }
   @media (max-width: 767px) {
     .reassurance {
       margin-bottom: 24px !important;
       margin-top: 48px !important; } }
-  .reassurance .col-md-3 {
+  .reassurance .col-md-3.col-xs-6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9467,21 +9469,21 @@ a:focus {
         -ms-flex-direction: column;
             flex-direction: column; }
     @media (max-width: 767px) {
-      .reassurance .col-md-3 {
+      .reassurance .col-md-3.col-xs-6 {
         height: 160px; } }
-    .reassurance .col-md-3 img {
+    .reassurance .col-md-3.col-xs-6 img {
       width: 64px;
       height: 64px;
       -o-object-fit: contain;
          object-fit: contain;
       margin: 0 auto 16px auto; }
-      .reassurance .col-md-3 img:last-child {
+      .reassurance .col-md-3.col-xs-6 img:last-child {
         height: 30px;
         margin: 0 auto 0 auto; }
-    .reassurance .col-md-3 span {
+    .reassurance .col-md-3.col-xs-6 span {
       text-align: center;
       color: #161014; }
       @media (max-width: 767px) {
-        .reassurance .col-md-3 span {
+        .reassurance .col-md-3.col-xs-6 span {
           font-size: 14px; } }
 
