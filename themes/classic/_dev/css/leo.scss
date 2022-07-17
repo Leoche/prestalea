@@ -17,7 +17,10 @@ header {
   }
 }
 .btn, .form-control{
-  border-radius: 10px;
+  border-radius: 4px;
+}
+hr{
+  opacity: 0.3;
 }
 #login-form h1{
   text-align: center;
@@ -44,6 +47,9 @@ body{
   font-weight: 400;
   padding-top: 96px;
   background: #fbf5f6;
+  @include desktop{
+    padding-top: 128px;
+  }
   #wrapper{
     max-width: 1190px;
     background: unset;
@@ -54,6 +60,11 @@ body{
     #wrapper{
       max-width: 100%;
     }
+  }
+}
+#main .page-content{
+  @include desktop{
+    margin-bottom: 6.5rem;
   }
 }
 #menu {
@@ -230,11 +241,21 @@ body{
   width: 100%;
   height: 595px;
   background: url(../img/hero_ll.jpg) #eddce2 center center;
+  @include mobile{
+    background: url(../img/hero_ll_mobile.jpg) #eddce2 bottom center;
+    background-size: cover;
+    height: 549px;
+  }
   .container{
     height: 100%;
     .content{
       height: 100%;
       width: 50%;
+      @include mobile{
+        width: 100%;
+        justify-content: end;
+        padding-bottom: 48px;
+      }
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -244,6 +265,11 @@ body{
         color: #7E5C76;
         font-size: 20px;
         text-transform: uppercase;
+        @include mobile{
+          letter-spacing: 6px;
+          font-size: 16px;
+          text-align: center;
+        }
       }
       > img{
         margin-top: -42px;
@@ -252,12 +278,20 @@ body{
       .price{
         display: inline-flex;
         align-items: center;
+        @include mobile{
+          flex-direction: column;
+          margin-top: 16px;
+        }
         .price-value{
           font: normal normal medium 12px/18px Jost;
           letter-spacing: 0px;
           color: #7E5C76;
           text-transform: uppercase;
           margin-right: 24px;
+          @include mobile{
+            margin-right: 0;
+            margin-bottom: 16px;
+          }
         }
       }
     }
@@ -317,11 +351,12 @@ a:focus {
 // FOOTER
 #footer{
   background: #ffffff;
+  padding-top: 0;
 }
-.row.reassurance{
+.reassurance{
   margin-bottom: 64px;
 }
-.footer-container{
+.footer-container, .container-reassurance{
   background: linear-gradient(0deg, #FFF6F9 0%, #fefefe 100%);
   position: relative;
   overflow: unset;
@@ -334,7 +369,7 @@ a:focus {
   .container {
     padding-top: 64px;
     position: relative;
-    > .row:last-child{
+    .reassurance{
       padding-top: 64px;
     }
     &::after{
@@ -400,6 +435,9 @@ a:focus {
   .col-md-3.col-xs-6{
     display: flex;
     flex-direction: column;
+    &:nth-child(3) img{
+      width: 80px;
+    }
     @include mobile{
       height: 160px;
     }
@@ -420,5 +458,270 @@ a:focus {
         font-size: 14px;
       }
     }
+  }
+}
+.container-reassurance{
+  &:before{
+    display: none;
+  }
+  .container{
+    padding-top: 0;
+    padding-bottom: 64px;
+    z-index: 2;
+    &:before, &:after{
+      transform: rotate(170deg) scale(0.50);
+    }
+  }
+}
+.page-header h1{
+  font-weight: 400;
+  color: #640927;
+  font-size: 26px;
+}
+
+#authentication{
+  @include mobile{
+    #submit-login{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+  .page-header h1{
+    text-align: center;
+  }
+}
+
+.loveletter-products{
+  background: $black;
+  padding: 64px 0 0;
+  .headings{
+    transform:translateZ(0);
+    position: relative;
+    z-index: 2;
+  }
+  h1{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    display: block;
+    text-align: center;
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+  h2{
+    color: $brand-primary;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 2;
+    @include mobile{
+      letter-spacing: 2px;
+    }
+  }
+  .owlslider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    @include mobile{
+      flex-direction: column;
+    }
+    .loveletter-product{
+      max-width: 360px;
+      width: 100%;
+      &:nth-child(2){
+        transform:scale(1.1);
+        @include mobile{
+          transform:scale(1)
+        }
+      }
+      img{
+        transition: .2s all;
+        z-index: 1;
+      }
+      .infos{
+        text-align: center;
+        z-index: 2;
+        transform: translateY(-90px);
+        transition: .2s all;
+        p{
+          text-transform: uppercase;
+          color: $white;
+          letter-spacing: 6px;
+          margin-bottom: 4px;
+          font-size: 16px;
+        }
+        span{
+          display: block;
+          text-align: center;
+          &.price{
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            transition: .2s all;
+            margin-bottom: 8px;
+          }
+          &.variant{
+            font-size: 12px;
+            font-weight: 400;
+            color: $white;
+            margin-bottom: 16px;
+            &.variant-rose{
+              color:#fcd9d5;
+            }
+            &.variant-silver{
+              color:#CCCCCC;
+            }
+            &.variant-gold{
+              color:#FFF1B7;
+            }
+          }
+        }
+      }
+      &:hover{
+        img{
+          transform: scale(1.05);
+        }
+        .infos{
+          transform: translateY(-80px);
+          .price{
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+}
+.threebox{
+  display: flex;
+  @include mobile{
+    flex-direction: column;
+  }
+  > div{
+    width: 33.33%;
+    @include mobile{
+      width: 100vw;
+      height: 100vw;
+    }
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+      pointer-events: none;
+    }
+    @include mobile{
+      width: 100%;
+    }
+    &:nth-child(1) figure p{
+      justify-content: start;
+    }
+    &:nth-child(2) figure p{
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 48px;
+      line-height: 52px;
+      text-align: center;
+      @include not-desktop{
+        font-size: 32px;
+      }
+    }
+    &:nth-child(3) figure p{
+      justify-content: end;
+      align-items: start;
+    }
+    figure{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        object-fit:cover
+      }
+      p{
+        z-index: 1;
+        font-size: 26px;
+        line-height: 32px;
+        position: absolute;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: $black;
+        padding: 32px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        @include not-desktop{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.block_newsletter{
+  background: url(../img/slider-fille.jpg) left bottom;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .container{
+    position: relative;
+    height: 305px;
+  }
+  h1{
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    padding-top: 16px;
+  }
+  .content{
+    width: 40%;
+    @include tablet{
+      width: 60%;
+    }
+    @include mobile{
+      width: calc(100% - 32px);
+      margin:16px;
+    }
+    margin:32px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 15px 35px rgba(226, 176, 185, .2);
+    backdrop-filter: blur(8px);
+    border-radius:5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding:32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    align-items: end;
+    gap:16px
   }
 }

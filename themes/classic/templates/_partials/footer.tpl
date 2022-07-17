@@ -22,29 +22,31 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<div class="container">
-  <div class="row">
-    {block name='hook_footer_before'}
-      {hook h='displayFooterBefore'}
-    {/block}
-  </div>
-  <div class="row reassurance">
-    <div class="col-md-3 col-xs-6">
-      <img src="/img/lea/lock.svg" alt="Paiement sécurisé">
-      <span>Paiement sécurisé</span>
-      <img src="/img/lea/cb.png" alt="Moyens de paiements">
-    </div>
-    <div class="col-md-3 col-xs-6">
-      <img src="/img/lea/package.svg" alt="Paiement sécurisé">
-      <span>Paiement sécurisé</span>
-    </div>
-    <div class="col-md-3 col-xs-6">
-      <img src="/img/lea/shipping.svg" alt="Paiement sécurisé">
-      <span>Expédié sous 48h à 72h</span>
-    </div>
-    <div class="col-md-3 col-xs-6">
-      <img src="/img/lea/speech.svg" alt="Paiement sécurisé">
-      <span>S.A.V. et assistance du Lundi au Vendredi de 9h à 18h</span>
+{block name='hook_footer_before'}
+  {hook h='displayFooterBefore'}
+{/block}
+<div class="container-reassurance">
+  <div class="container">
+    <div class="row">
+      <div class="reassurance">
+        <div class="col-md-3 col-xs-6">
+          <img src="/img/lea/lock.svg" alt="Paiement sécurisé">
+          <span>Paiement sécurisé</span>
+          <img src="/img/lea/cb.png" alt="Moyens de paiements">
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img src="/img/lea/package.svg" alt="Paiement sécurisé">
+          <span>Paiement sécurisé</span>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img src="/img/lea/shipping.svg" alt="Paiement sécurisé">
+          <span>Expédié sous 48h à 72h</span>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img src="/img/lea/speech.svg" alt="Paiement sécurisé">
+          <span>S.A.V. et assistance du Lundi au Vendredi de 9h à 18h</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -54,7 +56,7 @@
       <div class="col-md-3 links wrapper">
         <div class="row">
           <div class="col-md-12 wrapper">
-          <img src="/img/lea/logo.png" alt="La boutique de Léa">
+            <img src="/img/lea/logo.png" alt="La boutique de Léa">
             <img src="/img/lea/petales.png" alt="Pétales de Léa">
           </div>
         </div>
@@ -85,7 +87,7 @@
     <div class="row">
       <div class="col-md-12">
         <p class="text-sm-center copyrightsubfooter">
-        © 2022 - La Boutique de Léa
+          © 2022 - La Boutique de Léa
         </p>
       </div>
     </div>

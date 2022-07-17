@@ -57,9 +57,14 @@ let config = {
         test: /\.scss$/,
         use:[ 
             MiniCssExtractPlugin.loader,
-            'css-loader',
-            'postcss-loader',
-            'sass-loader',
+            {
+              loader: 'css-loader',
+              options: {sourceMap: true},
+            },
+            {
+              loader: 'sass-loader',
+              options: {sourceMap: true},
+            },
           ],
       },
       {
@@ -110,6 +115,8 @@ if (process.env.NODE_ENV === 'production') {
       })
     ]
   }
+} else {
+  config.devtool = 'source-map';
 }
 
 module.exports = config;

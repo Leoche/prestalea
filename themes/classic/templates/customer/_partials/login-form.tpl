@@ -29,8 +29,6 @@
   {/block}
 
   <form id="login-form" action="{block name='login_form_actionurl'}{$action}{/block}" method="post">
-    <h1>
-    {l s='Log in to your account' d='Shop.Theme.Customeraccount'}</h1>
     <div>
       {block name='login_form_fields'}
         {foreach from=$formFields item="field"}
